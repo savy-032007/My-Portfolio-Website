@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shourya Waydande | Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-initials">YN</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container container">
+      <a href="#home" class="nav-logo">My<span>Portfolio</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="container hero-container">
+
+      <div class="hero-text reveal-left">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Shourya Waydande</h1>
+        <div class="hero-typewriter">
+          <span>I'm a </span>
+          <span class="typewriter-text" id="typewriterText"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+        <p class="hero-tagline">Crafting beautiful, responsive, and high-performance web experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary ripple-btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline ripple-btn">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/savy-032007" class="social-icon" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/savyway0307/" class="social-icon" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/shouryaw.07/" class="social-icon" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal-right">
+        <div class="image-wrapper">
+          <div class="image-ring ring-1"></div>
+          <div class="image-ring ring-2"></div>
+          <div class="image-ring ring-3"></div>
+          <div class="profile-img-container">
+            <div class="profile-placeholder">
+              <i class="bx bx-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="hero-badge badge-1">
+          <i class="bx bx-code-alt"></i>
+          <span>Open to Work</span>
+        </div>
+        <div class="hero-badge badge-2">
+          <i class="bx bx-star"></i>
+          <span>Hire me</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-subtitle">Get to know me a little better</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-image-wrapper">
+            <div class="about-placeholder">
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="about-exp-badge">
+              <span class="exp-number">2</span>
+              <span class="exp-label">Years in<br/>Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col reveal-right">
+          <h3 class="about-heading">Passionate Developer & Designer</h3>
+          <p class="about-text">
+            Enthusiastic and curious engineering student with a strong interest
+in web development and creating user-friendly digital experiences.
+Eager to apply my technical skills, learn new technologies, and
+contribute to real-world projects while growing as a developer. 
+          </p>
+          <p class="about-text">
+            When I'm not coding, you'll find me exploring the latest design trends, contributing
+            to open-source projects, or leveling up my skills in new technologies.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="bx bx-user-circle"></i>
+              <div>
+                <span class="info-label">Name</span>
+                <span class="info-value">Shourya Waydande</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bx bx-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">www.savy0307@gmailcom</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bx bx-map"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Pune, Maharashtra, India</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bx bx-briefcase"></i>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value available">Available for Hire</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary ripple-btn" download>
+            <i class="bx bx-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-wrap reveal">
+        <h3 class="skills-heading">My Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-bar-item" data-skill="HTML5" data-level="95">
+            <div class="skill-info">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="CSS3" data-level="90">
+            <div class="skill-info">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="JavaScript" data-level="85">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="React" data-level="80">
+            <div class="skill-info">
+              <span class="skill-name">React</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Node.js" data-level="75">
+            <div class="skill-info">
+              <span class="skill-name">Node.js</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Figma" data-level="85">
+            <div class="skill-info">
+              <span class="skill-name">Figma</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="bx bxl-html5"></i> HTML5</span>
+          <span class="skill-tag"><i class="bx bxl-css3"></i> CSS3</span>
+          <span class="skill-tag"><i class="bx bxl-javascript"></i> JavaScript</span>
+          <span class="skill-tag"><i class="bx bxl-react"></i> React</span>
+          <span class="skill-tag"><i class="bx bxl-nodejs"></i> Node.js</span>
+          <span class="skill-tag"><i class="bx bxl-git"></i> Git</span>
+          <span class="skill-tag"><i class="bx bxl-figma"></i> Figma</span>
+          <span class="skill-tag"><i class="bx bxl-mongodb"></i> MongoDB</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <p class="section-subtitle">A selection of work I'm proud of</p>
+      </div>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <i class="bx bx-code-block"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="bx bx-link-external"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web Development</span>
+            <h3 class="project-title">Project One</h3>
+            <p class="project-desc">A fully responsive e-commerce platform with smooth animations, cart functionality, and a modern design system built from scratch.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="design">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder color-2">
+              <i class="bx bx-palette"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="bx bx-link-external"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">UI/UX Design</span>
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-desc">A comprehensive dashboard UI/UX design with data visualizations, accessibility-first components, and a cohesive design language.</p>
+            <div class="project-tags">
+              <span>React</span><span>Figma</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder color-3">
+              <i class="bx bx-mobile-alt"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="bx bx-link-external"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web Development</span>
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-desc">A progressive web application with offline support, push notifications, and native-like performance on mobile devices.</p>
+            <div class="project-tags">
+              <span>Node.js</span><span>MongoDB</span><span>PWA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <a href="#" class="btn btn-outline ripple-btn">
+          <i class="bx bxl-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span>Services</span></h2>
+        <p class="section-subtitle">Here's how I can help bring your vision to life</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <i class="bx bx-code-curly"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Building fast, scalable, and accessible websites and web applications using the latest technologies and best practices.</p>
+          <ul class="service-list">
+            <li><i class="bx bx-check"></i> Responsive Design</li>
+            <li><i class="bx bx-check"></i> Performance Optimization</li>
+            <li><i class="bx bx-check"></i> Cross-browser Compatibility</li>
+            <li><i class="bx bx-check"></i> SEO Best Practices</li>
+          </ul>
+          <a href="#contact" class="service-cta">Get Started <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+
+        <div class="service-card reveal featured-service">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <i class="bx bx-brush-alt"></i>
+            </div>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-desc">Creating intuitive, beautiful user interfaces and experiences that delight users and achieve business goals seamlessly.</p>
+          <ul class="service-list">
+            <li><i class="bx bx-check"></i> User Research & Wireframing</li>
+            <li><i class="bx bx-check"></i> Prototyping & Testing</li>
+            <li><i class="bx bx-check"></i> Design Systems</li>
+            <li><i class="bx bx-check"></i> Figma & Adobe XD</li>
+          </ul>
+          <a href="#contact" class="service-cta">Get Started <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <i class="bx bx-devices"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Responsive Design</h3>
+          <p class="service-desc">Ensuring your digital presence looks and performs perfectly across all devices — from large desktops to compact mobile screens.</p>
+          <ul class="service-list">
+            <li><i class="bx bx-check"></i> Mobile-First Approach</li>
+            <li><i class="bx bx-check"></i> Fluid Grid Layouts</li>
+            <li><i class="bx bx-check"></i> Adaptive Media</li>
+            <li><i class="bx bx-check"></i> Touch-Friendly UI</li>
+          </ul>
+          <a href="#contact" class="service-cta">Get Started <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats section-alt">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Awards Won</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <h3 class="contact-info-title">Let's talk about your project</h3>
+          <p class="contact-info-text">Feel free to reach out if you have a project in mind, want to collaborate, or just want to say hi. I'll get back to you as soon as possible!</p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="bx bx-envelope"></i></div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <a href="mailto:yourname@email.com" class="contact-card-value">yourname@email.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="bx bx-phone"></i></div>
+              <div>
+                <span class="contact-card-label">Phone</span>
+                <a href="tel:+1234567890" class="contact-card-value">+1 (234) 567-890</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="bx bx-map"></i></div>
+              <div>
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Your City, Country</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="nameInput" class="form-input" required autocomplete="off" />
+              <label for="nameInput" class="form-label">Your Name</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="emailInput" class="form-input" required autocomplete="off" />
+              <label for="emailInput" class="form-label">Email Address</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subjectInput" class="form-input" required autocomplete="off" />
+              <label for="subjectInput" class="form-label">Subject</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="messageInput" class="form-input form-textarea" required rows="4"></textarea>
+              <label for="messageInput" class="form-label">Your Message</label>
+              <span class="form-line"></span>
+            </div>
+            <button type="submit" class="btn btn-primary ripple-btn btn-full">
+              <span class="btn-text">Send Message</span>
+              <i class="bx bx-send"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="bx bx-check-circle"></i>
+              <span>Message sent successfully! I'll reply soon.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">Your<span>Name</span></a>
+          <p class="footer-tagline">Crafting beautiful, responsive, and high-performance web experiences.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Responsive Design</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay in Touch</h4>
+          <p>Follow me on social media for updates.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <p>Designed & Built with <i class="bx bx-heart"></i> by Your Name</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bx bx-up-arrow-alt"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
