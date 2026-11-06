@@ -1,4 +1,5 @@
 # 🌟 Shourya Waydande — Developer Portfolio
+<<<<<<< HEAD
 
 A sleek, modern, and high-performance personal developer portfolio website designed with an anime-themed hero avatar, dynamic interactive canvas particles, fluid micro-animations, and a responsive mobile-first layout.
 
@@ -15,6 +16,16 @@ Built entirely with **pure Vanilla web technologies** (HTML5, CSS3, JavaScript E
 
 ## ✨ Features & Highlights
 
+=======
+A sleek, modern, and high-performance personal developer portfolio website designed with an anime-themed hero avatar, dynamic interactive canvas particles, fluid micro-animations, and a responsive mobile-first layout.
+Built entirely with **pure Vanilla web technologies** (HTML5, CSS3, JavaScript ES6+) — zero heavy frameworks, zero bloat, lightning fast.
+---
+## 🚀 Live Demo & Preview
+> **Live Portfolio:** [shourya-portfolio.vercel.app](https://github.com/savy-032007) *(or insert your deployment link)*  
+> **Author:** Shourya Waydande ([@savy-032007](https://github.com/savy-032007))
+---
+## ✨ Features & Highlights
+>>>>>>> 0560308b217eea2f1e97ae33067d175fab33044e
 ### ⚡ Visuals & Micro-Interactions
 - **Custom Branded Loader:** Sleek preloading screen with glowing monogram and animated loading progress.
 - **Magnetic Custom Cursor:** Smooth lagging ring cursor that intelligently expands and reacts when hovering over buttons, cards, and links.
@@ -22,7 +33,10 @@ Built entirely with **pure Vanilla web technologies** (HTML5, CSS3, JavaScript E
 - **Typewriter Effect:** Animated role rotator switching between *Frontend Developer*, *UI/UX Designer*, and *Problem Solver*.
 - **Hero Character Avatar:** High-resolution anime developer avatar framed by multi-layered spinning concentric orbital rings and floating status badges (*"Open to Work"*, *"Hire me"*).
 - **Subtle Parallax Motion:** Smooth depth effect on scroll in the hero banner.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0560308b217eea2f1e97ae33067d175fab33044e
 ### 💼 Portfolio Sections
 - **About Me:** Professional bio, quick facts (Location, Availability, Email), and a CV download trigger.
 - **Dynamic Skill Bars:** Intersection-observer-powered animated progress bars and interactive technology tags.
@@ -30,6 +44,7 @@ Built entirely with **pure Vanilla web technologies** (HTML5, CSS3, JavaScript E
 - **Services Grid:** Structured offerings highlighting Web Development, UI/UX Design, and Responsive Design.
 - **Animated Milestone Counters:** Real-time ease-out numeric counters displaying completed projects, hours coded, and client statistics.
 - **Interactive Orbit Contact Visual:** Central monogram surrounded by counter-rotating planetary tech nodes (React, JS, HTML5, CSS3, Node.js, Figma) alongside a live availability indicator with pulsing green status LED.
+<<<<<<< HEAD
 - **Smart Navbar & Smooth Scroll:** Glassmorphic sticky navigation bar that indicates the active section automatically and collapses into a full mobile drawer menu.
 - **Back-to-Top Button:** One-click smooth scrolling return button.
 
@@ -150,3 +165,5 @@ The stylesheet has been crafted to adapt across all display dimensions:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE). Feel free to use it as inspiration or as a foundation for your own developer portfolio!
+=======
+>>>>>>> 0560308b217eea2f1e97ae33067d175fab33044e
