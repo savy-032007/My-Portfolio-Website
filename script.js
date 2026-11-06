@@ -51,7 +51,7 @@
   animateRing();
 
   // Grow ring over interactive elements
-  const interactives = 'a, button, .project-card, .service-card, .skill-tag, .filter-btn, .social-icon, .social-link, .back-to-top';
+  const interactives = 'a, button, .project-card, .service-card, .skill-tag, .social-icon, .social-link, .back-to-top, .cv-orbit-item, .cv-status-card, .cv-center, .cv-floating-badge';
   document.querySelectorAll(interactives).forEach(el => {
     el.addEventListener('mouseenter', () => ring.classList.add('active'));
     el.addEventListener('mouseleave', () => ring.classList.remove('active'));
@@ -385,6 +385,7 @@ function triggerHeroReveal() {
    ───────────────────────────────────────────── */
 (function initProjectFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
+  if (!filterBtns.length) return;
   const cards      = document.querySelectorAll('.project-card');
 
   filterBtns.forEach(btn => {
