@@ -1,0 +1,10 @@
+# Node modules (if you ever add npm packages)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
